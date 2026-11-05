@@ -31,7 +31,7 @@ c = -5
 ## Desarrollo
 
 1. $x_1 \oplus x_2 = (x_1 \land \lnot x_2) \lor (\lnot x_1 \land x_2)$.
-2. Si $a, b \in \{0,1\}$, entonces $\mathrm{ReLU}(a - b) = a \land \lnot b$, porque $a - b$ solo vale $1$ cuando $a = 1$ y $b = 0$.
+2. Si $a, b \in \lbrace 0,1 \rbrace$, entonces $\mathrm{ReLU}(a - b) = a \land \lnot b$, porque $a - b$ solo vale $1$ cuando $a = 1$ y $b = 0$.
 3. $h_1$ y $h_2$ nunca valen $1$ a la vez, así que el "o" de los dos es su suma.
 4. Para la salida pedimos $z \le -5$ cuando $h_1 + h_2 = 0$ y $z \ge 5$ cuando vale $1$ (criterio del Ejercicio 7.9 del libro). Eso da $c = -5$ y $w = 10$.
 
